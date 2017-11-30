@@ -1,3 +1,3 @@
 main = do
-    let lostNumbers = [1, 2, 3, 4] 
-    print [ odd x | x <- lostNumbers] 
+    let lostNumbers = [1 .. 10] 
+    print [x * 3 | x <- lostNumbers, x*3 < 50] 
